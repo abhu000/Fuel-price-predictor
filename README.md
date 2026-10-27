@@ -1,8 +1,8 @@
-# Fuel Price Predictor: Parramatta U91
+# Fuel Price Predictor: Blacktown U91
 
 **MMA3001 individual project · Aryan Bhurjhee · Monash University, Semester 2 2026**
 
-Forecasting the average unleaded 91 (U91) pump price in Parramatta, NSW, **2–3 days ahead**, so drivers can decide which day to fill up.
+Forecasting the average unleaded 91 (U91) pump price in Blacktown, NSW, **2–3 days ahead**, so drivers can decide which day to fill up.
 
 ---
 
@@ -26,10 +26,10 @@ See [`data/README.md`](data/README.md) for file-by-file details, processing note
 
 ## Model inputs and output
 
-**Output:** predicted average U91 price in Parramatta (c/L), 2–3 days ahead.
+**Output:** predicted average U91 price in Blacktown (c/L), 2–3 days ahead.
 
 **Inputs:**
-- past Parramatta U91 prices (1, 2, 3 and 7 days earlier)
+- past Blacktown U91 prices (1, 2, 3 and 7 days earlier)
 - Sydney terminal gate price
 - Brent crude oil, converted to Australian cents per litre using AUD/USD
 - fuel excise rate
