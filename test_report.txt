@@ -1,0 +1,25 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.16, pytest-9.1.1, pluggy-1.7.0 -- /usr/bin/python
+metadata: {'Python': '3.13.16', 'Platform': 'Linux-6.18.44-fc-v165-x86_64-with-glibc2.39', 'Packages': {'pytest': '9.1.1', 'pluggy': '1.7.0'}, 'Plugins': {'anyio': '4.15.1', 'metadata': '3.1.1', 'html': '4.2.0'}, 'JAVA_HOME': '/usr/lib/jvm/java-21-openjdk-amd64'}
+rootdir: /home/claude/fuel-price-predictor
+plugins: anyio-4.15.1, metadata-3.1.1, html-4.2.0
+collecting ... collected 16 items
+
+tests/test_fuel_model.py::test_ode_rhs_zero_at_target PASSED             [  6%]
+tests/test_fuel_model.py::test_ode_rhs_sign PASSED                       [ 12%]
+tests/test_fuel_model.py::test_rk4_matches_exact_solution PASSED         [ 18%]
+tests/test_fuel_model.py::test_euler_and_rk4_converge_with_rising_wholesale PASSED [ 25%]
+tests/test_fuel_model.py::test_euler_is_first_order PASSED               [ 31%]
+tests/test_fuel_model.py::test_rk4_is_fourth_order PASSED                [ 37%]
+tests/test_fuel_model.py::test_vectorised_equals_loop PASSED             [ 43%]
+tests/test_fuel_model.py::test_fit_ode_recovers_known_parameters PASSED  [ 50%]
+tests/test_fuel_model.py::test_evaluate_perfect_forecast PASSED          [ 56%]
+tests/test_fuel_model.py::test_evaluate_known_mae_and_direction PASSED   [ 62%]
+tests/test_fuel_model.py::test_evaluate_ignores_small_moves PASSED       [ 68%]
+tests/test_fuel_model.py::test_evaluate_baseline_has_no_direction PASSED [ 75%]
+tests/test_fuel_model.py::test_find_restorations_counts_first_rise_only PASSED [ 81%]
+tests/test_fuel_model.py::test_days_since_restoration PASSED             [ 87%]
+tests/test_fuel_model.py::test_load_fuelcheck_csv_keeps_only_blacktown_u91 PASSED [ 93%]
+tests/test_fuel_model.py::test_load_fuelcheck_old_xlsx_with_title_rows_and_merged_cells PASSED [100%]
+
+============================== 16 passed in 0.29s ==============================
