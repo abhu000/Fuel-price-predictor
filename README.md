@@ -1,6 +1,6 @@
 # Fuel Price Predictor: Parramatta U91
 
-**MMA3001 individual project · Seth Bhurjhee · Monash University, Semester 2 2026**
+**MMA3001 individual project · Aryan Bhurjhee · Monash University, Semester 2 2026**
 
 Forecasting the average unleaded 91 (U91) pump price in Parramatta, NSW, **2–3 days ahead**, so drivers can decide which day to fill up.
 
