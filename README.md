@@ -68,6 +68,7 @@ Trained on 2020–2024, tested on withheld data from Jan 2025 – Aug 2026 (3 da
 Direction = share of days (price moved ≥ 1 c/L) where up/down was predicted correctly.
 
 | Model | MAE (c/L) | Direction accuracy (%) |
+|---|---|---|
 | Baseline: no change | 5.42 | – |
 | ODE (RK4) | 4.95 | 65.6% |
 | ODE (Euler) | 4.96 | 65.3% |
