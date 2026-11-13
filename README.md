@@ -58,18 +58,23 @@ Fuel-price-predictor/
 Tested with Python 3.12.
 
 1. Clone the repository and install the packages:
+   ```
        git clone https://github.com/abhu000/Fuel-price-predictor.git
        cd Fuel-price-predictor
        pip install -r requirements.txt
-2. Open `fuel_price_predictor.ipynb` in Jupyter or VS Code and choose **Run All**.
+   ```
+3. Open `fuel_price_predictor.ipynb` in Jupyter or VS Code and choose **Run All**.
    It uses `data/blacktown_u91_price_changes.csv` (already in the repo), so the raw data isn't needed.
-3. Optional – rebuild from the raw FuelCheck data (several hundred MB, not stored here,
+4. Optional – rebuild from the raw FuelCheck data (several hundred MB, not stored here,
    source: https://data.nsw.gov.au/data/dataset/fuel-check):
+   ```
        python download_fuelcheck.py
+   ```
    then delete `data/blacktown_u91_price_changes.csv` and Run All again.
-4. Run the tests:
+6. Run the tests:
+   ```
        pytest -v
-   
+   ```
 
 ## Method
 
@@ -104,15 +109,17 @@ Fitted ODE: k = 0.030 per day, m = −2.5 c/L (half-life ≈ 23 days).
 vectorised vs loop, grid-search fitting, evaluation metrics, restoration detection and both FuelCheck file formats.
 
 Run from the repository folder:
+```
     pytest -v --html=test_report.html --self-contained-html
-
+```
 Latest result: 16 passed (see `test_report.html`).
 
 ## Documentation
 
 HTML documentation of `fuel_model.py` is in `docs/` (generated with pdoc). Rebuild with:
+```
     pdoc fuel_model.py -o docs
-
+```
 ## Licence
 
 MIT – see `LICENSE`.
