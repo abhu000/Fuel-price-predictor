@@ -1,27 +1,9 @@
 # Fuel Price Predictor: Blacktown U91
 
-## How to run
 
-Tested with Python 3.12.
-
-1. Clone the repository and install the packages:
-       git clone https://github.com/abhu000/Fuel-price-predictor.git
-       cd Fuel-price-predictor
-       pip install -r requirements.txt
-2. Open `fuel_price_predictor.ipynb` in Jupyter or VS Code and choose **Run All**.
-   It uses `data/blacktown_u91_price_changes.csv` (already in the repo), so the raw data isn't needed.
-3. Optional – rebuild from the raw FuelCheck data (several hundred MB, not stored here,
-   source: https://data.nsw.gov.au/data/dataset/fuel-check):
-       python download_fuelcheck.py
-   then delete `data/blacktown_u91_price_changes.csv` and Run All again.
-4. Run the tests:
-       pytest -v
-   
 **MMA3001 individual project · Aryan Bhurjhee · Monash University, Semester 2 2026**
 
 Forecasting the average unleaded 91 (U91) pump price in Blacktown, NSW, **2–3 days ahead**, so drivers can decide which day to fill up.
-
----
 
 ## Problem
 
@@ -71,7 +53,23 @@ Fuel-price-predictor/
 └── data/                        ← supporting data + blacktown_u91_price_changes.csv (see data/README.md)
 ```
 
+## How to run
 
+Tested with Python 3.12.
+
+1. Clone the repository and install the packages:
+       git clone https://github.com/abhu000/Fuel-price-predictor.git
+       cd Fuel-price-predictor
+       pip install -r requirements.txt
+2. Open `fuel_price_predictor.ipynb` in Jupyter or VS Code and choose **Run All**.
+   It uses `data/blacktown_u91_price_changes.csv` (already in the repo), so the raw data isn't needed.
+3. Optional – rebuild from the raw FuelCheck data (several hundred MB, not stored here,
+   source: https://data.nsw.gov.au/data/dataset/fuel-check):
+       python download_fuelcheck.py
+   then delete `data/blacktown_u91_price_changes.csv` and Run All again.
+4. Run the tests:
+       pytest -v
+   
 
 ## Method
 
