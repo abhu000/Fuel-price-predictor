@@ -1,5 +1,22 @@
 # Fuel Price Predictor: Blacktown U91
 
+## How to run
+
+Tested with Python 3.12.
+
+1. Clone the repository and install the packages:
+       git clone https://github.com/abhu000/Fuel-price-predictor.git
+       cd Fuel-price-predictor
+       pip install -r requirements.txt
+2. Open `fuel_price_predictor.ipynb` in Jupyter or VS Code and choose **Run All**.
+   It uses `data/blacktown_u91_price_changes.csv` (already in the repo), so the raw data isn't needed.
+3. Optional – rebuild from the raw FuelCheck data (several hundred MB, not stored here,
+   source: https://data.nsw.gov.au/data/dataset/fuel-check):
+       python download_fuelcheck.py
+   then delete `data/blacktown_u91_price_changes.csv` and Run All again.
+4. Run the tests:
+       pytest -v
+   
 **MMA3001 individual project · Aryan Bhurjhee · Monash University, Semester 2 2026**
 
 Forecasting the average unleaded 91 (U91) pump price in Blacktown, NSW, **2–3 days ahead**, so drivers can decide which day to fill up.
@@ -10,7 +27,7 @@ Forecasting the average unleaded 91 (U91) pump price in Blacktown, NSW, **2–3 
 
 Petrol prices in Sydney move in an irregular cycle: they drift down for a few weeks, then jump sharply when retailers restore their margins. A driver who fills up the day before a jump can pay 20–30 c/L more than one who fills up just after it bottoms out. This project builds a model that uses wholesale costs, oil prices, the exchange rate, fuel excise and recent pump prices to forecast where the Blacktown price is heading over the next few days.
 
-**Scope:** U91 only, stations in Blacktown, daily data from Jan 2020 to October 2026.
+**Scope:** U91 only, stations in Blacktown, daily data from Jan 2020 to Aug 2026.
 
 ## Data
 
@@ -59,7 +76,7 @@ Fuel-price-predictor/
 ## Method
 
 1. clean and merge data/load each source sure consistency with data (i.e convert USD to AUD etc)
-2. compare a naive baseline (price in 3 days = today's price) against regression and machine-learning models, using a time-based train/test split. RK4 and euler via ODE: dP/dt = k(C(t) + m − P), fit k and m by grid search on 2020–2024, and solve with RK4 and euler to compare RK4 effectiveness. 
+2. compare baseline (price in 3 days = today's price) against regression and machine-learning models, using a time-based train/test split. RK4 and euler via ODE: dP/dt = k(C(t) + m − P), fit k and m by grid search on 2020–2024, and solve with RK4 and euler to compare RK4 effectiveness. 
 3. compare RK4 method with a baseline (original data), linear regression model and random forest model to compare MAE and effectiveness in predicting price increases/ decreases (on testing data
 
 ## Results
