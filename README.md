@@ -73,7 +73,7 @@ Tested with Python 3.12.
 
 ## Method
 
-1. clean and merge data/load each source sure consistency with data (i.e convert USD to AUD etc)
+1. Load, clean and merge data for analysis
 2. compare baseline (price in 3 days = today's price) against regression and machine-learning models, using a time-based train/test split. RK4 and euler via ODE: dP/dt = k(C(t) + m − P), fit k and m by grid search on 2020–2024, and solve with RK4 and euler to compare RK4 effectiveness. 
 3. compare RK4 method with a baseline (original data), linear regression model and random forest model to compare MAE and effectiveness in predicting price increases/ decreases (on testing data
 
@@ -116,6 +116,7 @@ HTML documentation of `fuel_model.py` is in `docs/` (generated with pdoc). Rebui
 ## Licence
 
 MIT – see `LICENSE`.
+
 ## Notes
 
 - Excise rates were compiled manually from the ATO's published fuel tax credit rates and entered in the notebook as a step function.
