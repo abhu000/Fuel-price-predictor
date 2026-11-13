@@ -8,7 +8,7 @@ Forecasting the average unleaded 91 (U91) pump price in Blacktown, NSW, **2–3 
 
 ## Problem
 
-Petrol prices in Sydney move in an irregular cycle: they drift down for a few weeks, then jump sharply when retailers restore their margins. A driver who fills up the day before a jump can pay 20–30 c/L more than one who fills up just after it bottoms out. This project builds a model that uses wholesale costs, oil prices, the exchange rate, fuel excise and recent pump prices to forecast where the Parramatta price is heading over the next few days.
+Petrol prices in Sydney move in an irregular cycle: they drift down for a few weeks, then jump sharply when retailers restore their margins. A driver who fills up the day before a jump can pay 20–30 c/L more than one who fills up just after it bottoms out. This project builds a model that uses wholesale costs, oil prices, the exchange rate, fuel excise and recent pump prices to forecast where the Blacktown price is heading over the next few days.
 
 **Scope:** U91 only, stations in Blacktown, daily data from Jan 2020 to October 2026.
 
