@@ -5,3 +5,6 @@ openpyxl
 xlrd
 requests
 scikit-learn
+pytest
+pytest-html
+pdoc
