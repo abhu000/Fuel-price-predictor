@@ -63,7 +63,7 @@ Tested with Python 3.12.
        cd Fuel-price-predictor
        pip install -r requirements.txt
    ```
-   2. Open `fuel_price_predictor.ipynb` in Jupyter or VS Code and choose **Run All**.
+2. Open `fuel_price_predictor.ipynb` in Jupyter or VS Code and choose **Run All**.
    It uses `data/blacktown_u91_price_changes.csv` (already in the repo), so the raw data isn't needed.
 3. Optional – rebuild from the raw FuelCheck data (several hundred MB, not stored here,
    source: https://data.nsw.gov.au/data/dataset/fuel-check):
@@ -80,7 +80,7 @@ Tested with Python 3.12.
 
 1. Load, clean and merge data for analysis
 2. Compare baseline (price in 3 days = today's price) against regression and machine-learning models, using a time-based train/test split. RK4 and Euler via ODE: dP/dt = k(C(t) + m − P), fit k and m by grid search on 2020–2024, and solve with RK4 and Euler to compare RK4 effectiveness. 
-   Compare RK4 method with a baseline (no change in data), linear regression model and random forest model to compare MAE and effectiveness in predicting price increases/ decreases (on testing data)
+3. Compare RK4 method with a baseline (no change in data), linear regression model and random forest model to compare MAE and effectiveness in predicting price increases/ decreases (on testing data)
 
 ## Results
 
