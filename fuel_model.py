@@ -1,5 +1,5 @@
 """
-Core functions for the Blacktown U91 fuel price predictor (MMA3001 project, Seth Bhurjhee).
+Core functions for the Blacktown U91 fuel price predictor.
 
 The notebook `fuel_price_predictor.ipynb` runs the full analysis step by step.
 This module holds the same main functions in one importable file, so that they can be
