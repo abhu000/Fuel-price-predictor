@@ -62,7 +62,8 @@ Tested with Python 3.12.
        git clone https://github.com/abhu000/Fuel-price-predictor.git
        cd Fuel-price-predictor
        pip install -r requirements.txt
-   ```2. Open `fuel_price_predictor.ipynb` in Jupyter or VS Code and choose **Run All**.
+   ```
+   2. Open `fuel_price_predictor.ipynb` in Jupyter or VS Code and choose **Run All**.
    It uses `data/blacktown_u91_price_changes.csv` (already in the repo), so the raw data isn't needed.
 3. Optional – rebuild from the raw FuelCheck data (several hundred MB, not stored here,
    source: https://data.nsw.gov.au/data/dataset/fuel-check):
