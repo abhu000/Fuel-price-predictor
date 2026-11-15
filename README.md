@@ -62,16 +62,15 @@ Tested with Python 3.12.
        git clone https://github.com/abhu000/Fuel-price-predictor.git
        cd Fuel-price-predictor
        pip install -r requirements.txt
-   ```
-3. Open `fuel_price_predictor.ipynb` in Jupyter or VS Code and choose **Run All**.
+   ```2. Open `fuel_price_predictor.ipynb` in Jupyter or VS Code and choose **Run All**.
    It uses `data/blacktown_u91_price_changes.csv` (already in the repo), so the raw data isn't needed.
-4. Optional – rebuild from the raw FuelCheck data (several hundred MB, not stored here,
+3. Optional – rebuild from the raw FuelCheck data (several hundred MB, not stored here,
    source: https://data.nsw.gov.au/data/dataset/fuel-check):
    ```
        python download_fuelcheck.py
    ```
    then delete `data/blacktown_u91_price_changes.csv` and Run All again.
-6. Run the tests:
+4. Run the tests:
    ```
        pytest -v
    ```
@@ -79,8 +78,8 @@ Tested with Python 3.12.
 ## Method
 
 1. Load, clean and merge data for analysis
-2. compare baseline (price in 3 days = today's price) against regression and machine-learning models, using a time-based train/test split. RK4 and euler via ODE: dP/dt = k(C(t) + m − P), fit k and m by grid search on 2020–2024, and solve with RK4 and euler to compare RK4 effectiveness. 
-3. compare RK4 method with a baseline (original data), linear regression model and random forest model to compare MAE and effectiveness in predicting price increases/ decreases (on testing data
+2. Compare baseline (price in 3 days = today's price) against regression and machine-learning models, using a time-based train/test split. RK4 and Euler via ODE: dP/dt = k(C(t) + m − P), fit k and m by grid search on 2020–2024, and solve with RK4 and Euler to compare RK4 effectiveness. 
+   Compare RK4 method with a baseline (no change in data), linear regression model and random forest model to compare MAE and effectiveness in predicting price increases/ decreases (on testing data)
 
 ## Results
 
